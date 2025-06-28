@@ -47,7 +47,7 @@ fake-news-api/
 ### 1. Clonar o repositório
 
 ```bash
-git clone <url-do-seu-repositorio>
+git clone https://github.com/lucasdwn/fake-news-api
 cd fake-news-api
 ````
 
