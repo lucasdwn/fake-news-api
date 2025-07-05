@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fake-news-api-deployment
+spec:
+  replicas: 2  # quantidade de pods
+  selector:
+    matchLabels:
+      app: fake-news-api
+  template:
+    metadata:
+      labels:
+        app: fake-news-api
+    spec:
+      containers:
+      - name: fake-news-api
+        image: lucasdwn/fake-news-api:latest
+        ports:
+        - containerPort: 8000
